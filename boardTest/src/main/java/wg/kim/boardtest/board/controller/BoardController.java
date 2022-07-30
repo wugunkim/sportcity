@@ -17,7 +17,7 @@ public class BoardController {
 
     @GetMapping("/")
     public String index() {
-        System.out.println("index!!");
+        System.out.println("index!!!");
 
         return "index";
     }
