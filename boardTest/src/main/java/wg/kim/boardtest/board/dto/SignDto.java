@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class SignDto {
 	private String email;
-	private String nick_name;
+	private String nickname;
 	private String password;
 	
 	public String getEmail() {
@@ -14,11 +14,11 @@ public class SignDto {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getNick_name() {
-		return nick_name;
+	public String getNickname() {
+		return nickname;
 	}
-	public void setNick_name(String nick_name) {
-		this.nick_name = nick_name;
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 	public String getPassword() {
 		return password;

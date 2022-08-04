@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import wg.kim.boardtest.board.dto.SignDto;
 import wg.kim.boardtest.board.service.SignService;
 
 @Controller
@@ -24,6 +25,11 @@ public class MainController {
 
         return "signup";
     }
+	@GetMapping("/signup/isOverlapEmail")
+    public String isOverlapEmail(SignDto Email) {
+    	String flag = "N";
+		SignDto signdto = new SignDto();
+    	
+    	return "N";
+    }
 }
-
-// 태산우산태
