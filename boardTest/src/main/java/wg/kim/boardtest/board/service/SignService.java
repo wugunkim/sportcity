@@ -6,10 +6,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import wg.kim.boardtest.board.dao.BoardDao;
-import wg.kim.boardtest.board.dao.PersonDao;
+
 import wg.kim.boardtest.board.dao.SignDao;
-import wg.kim.boardtest.board.dto.Board;
 import wg.kim.boardtest.board.dto.SignDto;
 
 import java.util.List;

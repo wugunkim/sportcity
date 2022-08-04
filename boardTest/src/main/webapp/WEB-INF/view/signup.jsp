@@ -43,17 +43,17 @@
     	let nicknameFg = $("#nicknameFg").val();
     	
     	if ("N" == emailFg) {
-    		alert("이메일 확인 ");
+    		alert("이메일 확인해주세요 ");
     		$("#email").focus();
     		return false;
     		
     	}
 		if ("N" == passwordFg) {
-    		alert("패스워 확인 ");
+    		alert("패스워드를 확인해주세요");
     		return false;
     	}
 		if ("N" == nicknameFg) {
-    		alert("닉네 확인 ");
+    		alert("닉네임을 확인해주세요 ");
     		 $("#nick_name").focus();
     		 return false;
 		}
@@ -87,7 +87,7 @@
     $(function(){
     	$("#email").focusout(function(){
     		let email = $("#email").val();
-    		if(""==email){
+    		if(""==email){ 
     			return false;
     		}
     		 var regEmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
@@ -95,7 +95,7 @@
    	    		  	$("#emailMessage").empty();
 					$("#emailMessage").append("이메일 형식이 맞지 않습니다.");
 					$("#emailMessage").css("color", "red");
-					$("#emailFg").val("N");
+					$("#emailFg").val("N"); 
 				return false;
     	      }
     	      
