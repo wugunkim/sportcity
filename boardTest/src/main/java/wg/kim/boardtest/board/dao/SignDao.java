@@ -7,7 +7,7 @@ import wg.kim.boardtest.board.dto.SignDto;
 @Mapper
 public interface SignDao {
 	
-	public int checkEmail(SignDto dto);	//dto 파라미터  int  반환형 .
+	public int checkEmail(SignDto dto);
 	public int checkNickname(SignDto dto);
 	public int signup(SignDto dto);
 }
