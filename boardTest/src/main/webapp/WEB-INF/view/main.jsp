@@ -42,6 +42,32 @@
      const signup = () => {
  		location.href("signup");
  	}
+     const login = () => {
+  		location.href("login");
+  	}
+     const realTimeShare = () => {
+   		location.href("real_time_share");
+   	}
+     const freeBoard = () => {
+   		location.href("free_board");
+   	}
+     const healthMap = () => {
+   		location.href("healthmap");
+   	}
+     const withBoard = () => {
+   		location.href("with_board");
+   	}
+     const game = () => {
+   		location.href("game");
+   	}
+     
+     const contact = () => {
+   		location.href("contact");
+   	}
+     const main = () => {
+    		location.href("main");
+    	}
+      
   </script>
 <body>
  <section id="container">
@@ -54,11 +80,11 @@
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a href="./main.jsp" class="logo">체육특별시</a>
+      <a href="main" class="logo">체육특별시</a>
       <!--logo end-->
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
-        <li><a class="logout" href="./login.jsp">로그인</a></li>
+        <li><a class="logout" href="login">로그인</a></li>
           <li><a class="logout" href="signup" >회원가입</a></li>
         </ul>
       </div>
@@ -88,27 +114,27 @@
               <span>커뮤니티</span>
               </a>
             <ul class="sub">
-              <li><a href="./real_time_share.jsp">실시간 공유 </a></li>
-              <li><a href="./free_board.jsp">자유 게시판</a></li>
+              <li><a href="real_time_share">실시간 공유 </a></li>
+              <li><a href="free_board">자유 게시판</a></li>
             </ul>
           </li>
           <li class="sub-menu">
-            <a href="./healthmap.jsp">
+            <a href="healthmap">
               <span>운동맛집</span>
             </a>
           </li>
            <li class="sub-menu">
-            <a href="./with_board.jsp">
+            <a href="with_board">
               <span>같이의 가치</span>
             </a>
           </li>
           <li class="sub-menu">
-            <a href="./game.jsp">
+            <a href="game">
               <span>대회 소식</span>
             </a>
           </li>
           <li class="sub-menu">
-            <a href="./contact.jsp">
+            <a href="contact">
               <span>문의사항</span>
             </a>
           </li>

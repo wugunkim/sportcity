@@ -87,24 +87,24 @@
     $(function(){
     	$("#email").focusout(function(){
     		let email = $("#email").val();
-    		if(""==email){ 
+    		if(""==email){ 	// 명시적인거 앞에두면 널포인트 이셉션 패스 
     			return false;
     		}
     		 var regEmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
     	      if (regEmail.test(email) === false) { // 3개는 값이같냐 ==타입이같
-   	    		  	$("#emailMessage").empty();
+   	    		  	$("#emailMessage").empty();		//라벨. 
 					$("#emailMessage").append("이메일 형식이 맞지 않습니다.");
 					$("#emailMessage").css("color", "red");
-					$("#emailFg").val("N"); 
+					$("#emailFg").val("N"); 	// 사인업 폼에 플래그  / 필터링 
 				return false;
     	      }
     	      
     		$.ajax({
-				url:'/sign/isOverlapEmail',
-				type:'GET',
-				data:{email},// key , value 값 같으면 하나만 써도 됨
-				success:function(data){
-					if("Y" != data.check){ //n을 앞에두면null이 아니라서 null포인트생략 가능 .
+				url:'/sign/isOverlapEmail',  	//url을 설정  요청 주소 . isOverlap메서드를  요청응답받는거야 .
+				type:'GET',						//조회 / 서버에서 데이터를 꺼내올때 get 사용 
+				data:{email},// key , value 값 같으면 하나만 써도 		이메일을 서버에 보낼것이다 . ㅇ89라인 이메일 초기화값 					
+				success:function(data){		// data = map 	 data라는 이름 으로 응답값 받음 ..  response entitiy return 갚의  <map, httpstatus 200>중 map ,	//status200 = success 
+					if("Y" != data.check){ //n을 앞에두면null이 아니라서 null포인트생략 가능..	check = 0 true
 						$("#emailMessage").empty();
 						$("#emailMessage").append("중복된 이메일입니다.");
 						$("#emailMessage").css("color", "red");
